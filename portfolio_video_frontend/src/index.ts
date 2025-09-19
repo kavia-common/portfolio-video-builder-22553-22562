@@ -1,7 +1,10 @@
-// This is your entry file! Refer to it when you render:
-// npx remotion render <entry-file> HelloWorld out/video.mp4
+ // This is your entry file! Refer to it when you render:
+ // npx remotion render <entry-file> HelloWorld out/video.mp4
 
-import { registerRoot } from "remotion";
-import { RemotionRoot } from "./Root";
+ import { registerRoot } from "remotion";
+ import { RemotionRoot } from "./Root";
 
-registerRoot(RemotionRoot);
+ registerRoot(RemotionRoot);
+
+ // Optional: Export UI App entry (not used by Remotion CLI)
+ export { App } from "./App";
